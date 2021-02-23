@@ -18,7 +18,7 @@
 
 运行此脚本前必须手动安装好依赖：`git wget curl perl moreutils node.js npm`  
 ```shell
-wget -q https://github.com/RikudouPatrickstar/jd-base/raw/v3/onekey-install.sh -O onekey-jd-base.sh && chmod +x onekey-jd-base.sh && ./onekey-jd-base.sh
+wget -qO- https://github.com/RikudouPatrickstar/jd-base/raw/v3/onekey-install.sh | bash
 ```
 
 ## 2. Docker
@@ -27,14 +27,14 @@ wget -q https://github.com/RikudouPatrickstar/jd-base/raw/v3/onekey-install.sh -
 
 脚本一键部署：  
 ```shell
-wget -q https://github.com/RikudouPatrickstar/jd-base/raw/v3/docker/onekey-docker.sh -O onekey-jd-docker.sh && chmod +x onekey-jd-docker.sh && ./onekey-jd-docker.sh
+wget -qO- https://github.com/RikudouPatrickstar/jd-base/raw/v3/docker/onekey-docker.sh | bash
 ```
 
 ### 如何自动更新Docker容器（可选）
 
-安装 `containrrr/watchtower` 可以自动更新容器，它也是一个容器，但这个容器可以监视你安装的所有容器的原始镜像的更新情况，如有更新，它将使用你原来的配置自动重新部署容器。访问 https://containrrr.dev/watchtower/ 获取更详细的部署说明，包括如何避开某些容器不让它自动更新，如何发更新容器后发送通知，设置检测时间等等。
+安装 `containrrr/watchtower`，如有更新，它将使用你原来的配置自动重新部署容器。访问 https://containrrr.dev/watchtower/ 获取更详细的部署说明。
 
-[Docker 相关文件](https://github.com/RikudouPatrickstar/jd-base/tree/v3/docker) 已提供，Docker 如何操作请自学，其他玩法自行研究，小白勿触！
+[Docker 相关文件](https://github.com/RikudouPatrickstar/jd-base/tree/v3/docker) 已提供，Docker 如何操作请自行了解，其他玩法自行研究，小白勿触！
 
 # 四、Web 面板使用说明
 
